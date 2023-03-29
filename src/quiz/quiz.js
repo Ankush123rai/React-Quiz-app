@@ -5,7 +5,7 @@ function Quiz({ Question, Options, cAnswer, Flag, handleSubmit }) {
 
   function handleRadioBtn(e) {
     let tempValue = e.target.value;
-    if (Number(cAnswer) == tempValue) {
+    if (Number(cAnswer) === tempValue) {
       result.current = result.current + 1;
     }
     handleSubmit(result.current);

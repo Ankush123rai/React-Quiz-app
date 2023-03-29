@@ -49,7 +49,7 @@ function MyQuiz() {
         {(check && ((finalResult >= 12) ? <h1>Congratulation {finalResult * 2}/20</h1> :
           <div className='result-div'>
             <h1> Congratulation {finalResult * 2}/20</h1>
-            <p onClick={handleRestart} className="btn">Restart</p>
+            <button onClick={handleRestart} className="btn">Restart</button>
           </div>))}
 
       </div>

@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
-
-function Quiz({ Question, Options, cAnswer, Flag, handleSubmit }) {
+function Quiz({ Question, Options, cAnswer, handleSubmit }) {
   let result = useRef(0);
 
   function handleRadioBtn(e) {
     let tempValue = e.target.value;
-    if (Number(cAnswer) === tempValue) {
+    if (Number(cAnswer) == tempValue) {
       result.current = result.current + 1;
     }
     handleSubmit(result.current);
